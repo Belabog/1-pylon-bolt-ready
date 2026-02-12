@@ -1,0 +1,18 @@
+# Never include deps/build output
+node_modules/
+dist/
+build/
+
+# Hide big static assets from the AI (site still runs)
+assets/images/**
+assets/fonts/**
+
+# Hide minified/vendor stuff (usually not edited)
+assets/**/vendor/**
+assets/**/*.min.js
+assets/**/*.min.css
+assets/**/*.map
+
+# OS junk
+**/.DS_Store
+**/Thumbs.db
